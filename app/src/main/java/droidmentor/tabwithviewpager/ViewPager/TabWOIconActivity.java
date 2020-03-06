@@ -3,15 +3,16 @@ package droidmentor.tabwithviewpager.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import droidmentor.tabwithviewpager.Fragment.CallsFragment;
+import droidmentor.tabwithviewpager.Fragment.NextFragment;
 import droidmentor.tabwithviewpager.Fragment.ChatFragment;
 import droidmentor.tabwithviewpager.Fragment.ContactsFragment;
+import droidmentor.tabwithviewpager.Fragment.OnlineFragment;
 import droidmentor.tabwithviewpager.R;
 import droidmentor.tabwithviewpager.ViewPagerAdapter;
 
@@ -24,10 +25,11 @@ public class TabWOIconActivity extends AppCompatActivity {
     private ViewPager viewPager;
 
     //Fragments
-
+    OnlineFragment onlineFragment;
     ChatFragment chatFragment;
-    CallsFragment callsFragment;
+    NextFragment nextFragment;
     ContactsFragment contactsFragment;
+   // ContactsFragment contactsFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,22 +77,24 @@ public class TabWOIconActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.action_status:
-                Toast.makeText(this, "Home Status Click", Toast.LENGTH_SHORT).show();
+            case R.id.action_community:
+                Intent community=new Intent(this,CommunityActivity.class);
+                startActivity(community);
+                finish();
                 return true;
-            case R.id.action_settings:
+      /*      case R.id.action_settings:
                 Toast.makeText(this, "Home Settings Click", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_with_icon:
-                Intent withicon=new Intent(this,TabWithIconActivity.class);
+                Intent withicon=new Intent(this,TournamentsActivity.class);
                 startActivity(withicon);
                 finish();
                 return true;
             case R.id.action_customtab:
-                Intent custom_tab=new Intent(this,CustomTabActivity.class);
+                Intent custom_tab=new Intent(this,CTournamentsActivity.class);
                 startActivity(custom_tab);
                 finish();
-                return true;
+                return true; */
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -99,10 +103,10 @@ public class TabWOIconActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager)
     {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        callsFragment=new CallsFragment();
+        nextFragment =new NextFragment();
         chatFragment=new ChatFragment();
         contactsFragment=new ContactsFragment();
-        adapter.addFragment(callsFragment,"CALLS");
+        adapter.addFragment(nextFragment,"CALLS");
         adapter.addFragment(chatFragment,"CHAT");
         adapter.addFragment(contactsFragment,"CONTACTS");
         viewPager.setAdapter(adapter);

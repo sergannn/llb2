@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">WhatsApp</string>
+    <string name="app_name">LLB</string>
 
-    <string name="tab1">CALLS</string>
-    <string name="tab2">CHATS</string>
-    <string name="tab3">CONTACTS</string>
+    <string name="tab1">Next</string>
+    <string name="online">OnLine</string>
+    <string name="tab3">Results</string>
     <string name="action_search">Search</string>
     <string name="action_chat">Chat</string>
     <string name="action_new_group">New Group</string>
@@ -19,5 +19,7 @@
     <string name="action_without_icon">Without Icon</string>
     <string name="action_with_icon">With Icon</string>
     <string name="action_custom">Custom Tab</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
 
 </resources>

@@ -5,7 +5,8 @@
         android:title="@string/action_calls"
         android:icon="@drawable/ic_call"
         app:showAsAction="always"/>
-    <item android:id="@+id/action_clear_log"
-        android:title="@string/action_clear_call_log"
-        app:showAsAction="never"/>
+    <item android:id="@+id/action_community"
+        android:title="Чат"
+        app:showAsAction="always"/>
+
 </menu>

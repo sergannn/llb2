@@ -1,15 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="droidmentor.tabwithviewpager.Fragment.ChatFragment">
+    tools:context="droidmentor.tabwithviewpager.Fragment.ContactsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tab2"
-        android:layout_centerInParent="true"
-        android:textSize="30sp" />
+    <ScrollView
+        android:id="@+id/sdfs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/msg_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <!--<LinearLayout
+            android:id="@+id/sdfdsffsd"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="June 2018"
+                    android:textColor="#98a9b7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/girl"
+                        android:layout_marginLeft="10dp"
+                        app:civ_border_color="#EEEEEE"
+                        app:civ_border_width="4dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_color="#d0d0d0"
+                        app:civ_shadow_radius="2" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/gray"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="05dp"
+                            android:text="Hello, IB"
+                            android:textColor="#616e7f" />
+
+
+                        <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Do you heard about Seotoolzz free android templates?"
+                            android:textColor="#616e7f" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                    android:id="@+id/myTextView_Roboto_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="June 2018"
+                    android:textColor="#98a9b7" />
+
+                <LinearLayout
+                    android:id="@+id/ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/green"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="05dp"
+                            android:text="Yes!"
+                            android:textColor="#fff" />
+
+
+                        <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="They got nice android templates, by the way!"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="50 sec ago"
+                        android:textColor="#98a9b7" />
+
+                </LinearLayout>
+
+                <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                    android:id="@+id/dfdsfd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="June 2018"
+                    android:textColor="#98a9b7" />
+
+                <LinearLayout
+                    android:id="@+id/linear_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/girl"
+                        app:civ_border_color="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        app:civ_border_width="4dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_color="#d0d0d0"
+                        app:civ_shadow_radius="2" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/gray"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <droidmentor.tabwithviewpager.chatlist.TextViewImmacBytes
+                            android:id="@+id/msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="05dp"
+                            android:text="Nice, Ok See Ya!"
+                            android:textColor="#616e7f" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+
+                <droidmentor.tabwithviewpager.chatlist.ETextViewImmacBytes
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Write a reply..."
+                    android:minWidth="200dp"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/send"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/smiley" />
+
+
+                    <ImageView
+                        android:id="@+id/attach"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/doc" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>-->
+    </ScrollView>
 
 </RelativeLayout>

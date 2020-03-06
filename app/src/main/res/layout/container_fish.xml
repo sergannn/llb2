@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="10dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <droidmentor.tabwithviewpager.TextViewImmacBytes
+                android:id="@+id/tName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Discussion from Jenni and 14 Others!"
+                android:textColor="@color/colorGray"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <droidmentor.tabwithviewpager.TextViewImmacBytes
+                    android:id="@+id/tDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="15 new notifications today"
+                    android:textColor="#1A8FD6"
+                    android:textSize="11sp" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/girl"
+                            android:translationZ="2dp"
+                            android:visibility="invisible"
+                            card_view:civ_border_color="@color/colorBackroundWhite"
+                            card_view:civ_border_width="2dp" />
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/girl2"
+                            android:translationZ="1dp"
+                            android:visibility="invisible"
+                            card_view:civ_border_color="@color/colorBackroundWhite"
+                            card_view:civ_border_width="2dp" />
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/girl3"
+                            android:translationZ="0dp"
+                            android:visibility="invisible"
+                            card_view:civ_border_color="@color/colorBackroundWhite"
+                            card_view:civ_border_width="2dp" />
+
+                        <droidmentor.tabwithviewpager.TextViewImmacBytes
+
+                            android:id="@+id/tReg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="75dp"
+                            android:background="@drawable/orange_circle"
+                            android:gravity="center"
+                            android:text="+12"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+<!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    card_view:cardCornerRadius="2dp"
+
+    card_view:cardElevation="1dp"
+    card_view:cardMaxElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <com.mikhaellopez.circularimageview.CircularImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:src="@drawable/girl3"
+                app:civ_border_color="@color/colorBackroundWhite"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.8"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <droidmentor.tabwithviewpager.TextViewImmacBytes
+                    android:id="@+id/tName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenni James"
+                    android:textColor="@color/colorGray"
+
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <droidmentor.tabwithviewpager.TextViewImmacBytes
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/tDate"
+                    android:text="CEO"
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center">
+
+                <droidmentor.tabwithviewpager.TextViewImmacBytes
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/orange_circle"
+                    android:gravity="center"
+                    android:id="@+id/tReg"
+                    android:text="+4"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+-->
